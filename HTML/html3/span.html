@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Span</title>
 
-    <style>
+    <!-- <style>
         table, td, tr{
             border: 1px solid black;
             border-collapse: collapse;
             text-align: center;
         }
+    </style> -->
+
+    <style>
+        table, td, tr{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px 20px;
+        }
     </style>
+
 </head>
 <body>
 
-    <table>
+    <!-- <table>
         <caption>My First Table</caption>
         
         <tr>
             <td colspan="2">abcd</td>
-            <!-- <td>abcd</td> -->
             <td>abcd</td>
         </tr>
 
@@ -33,25 +42,71 @@
         </tr>
 
         <tr>
-            <td rowspan="2">abcd</td>
-            <!-- <td>abcd</td> -->
+            <td rowspan="2"><br>abcd</td>
             <td>abcd</td>
             <td>abcd</td>
         </tr>
 
         <tr>            
-            <td>abcd</td>
-            <!-- <td colspan="2" rowspan="2">abcd</td> -->
-            <td>abcd</td>
+            <td colspan="2" rowspan="2">abcd</td>
         </tr>
 
         <tr>
             <td>abcd</td>
-            <td>abcd</td>
-            <td>abcd</td>
         </tr>
 
-    </table>
+    </table> -->
+
+    <table>
+        <caption>My First Table</caption>
+
+        <colgroup>
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+        
+        <tbody>
+
+            <tr style="visibility: collapse;"></trstyle>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td colspan="2">abcd</td>
+                <td>abcd</td>
+
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>abcd</td>
+                <td>abcd</td>
+                <td>abcd</td>
+            </tr>
+
+            <tr>            
+                <td>3</td>
+                <td rowspan="2">abcd</td>
+                <td>abcd</td>
+                <td>abcd</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td colspan="2" rowspan="2">abcd</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>abcd</td>
+            </tr>
+
+        </tbody>
+
+    </table> 
     
 </body>
 </html>
