@@ -1,0 +1,42 @@
+box{
+    height: 1vh;
+    width: 1vw;
+    border: 1px solid black;
+    position: relative;
+}
+
+#left_top{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+}
+
+#right_top{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    margin: 0;
+}
+
+#right_bottom{
+    position: absolute;
+    bottom : 0px;
+    right: 0px;
+    margin: 0;
+}
+
+#left_bottom{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 0;
+}
+
+#center{
+    position: absolute;
+    top: 48%;
+    right: 48%;
+    /* bottom: 50%; */
+    margin: 0;
+}
